@@ -15,9 +15,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
+    // file select panel
+    let fileSelectPanel = NSOpenPanel();
+    
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        let icon = NSImage(named: "statusIcon")
-        //icon.setTemplate(true) // will invert icon if you use the dark theme
+        let icon = NSImage(named: "statusIcon")!
+        icon.setTemplate(true) // will invert icon if you use the dark mode
         
         statusItem.image = icon
         statusItem.menu = statusMenu
@@ -26,9 +29,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
+    
+    func uploadFile(fileUrl: NSURL) {
+        print(fileUrl)
+    }
 
     @IBAction func selectFile(sender: NSMenuItem) {
-        var fileUpload = NSOpenPanel()
+        fileSelectPanel.runModal()
+        
+        var fileUpload = fileSelectPanel.URL
+        
+        if (fileUpload != nil) {
+            self.uploadFile(fileUpload!) // unwrap the NSURL
+        }
     }
     
     @IBAction func quitApp(sender: NSMenuItem) {
