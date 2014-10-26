@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DFFD571119FD68AB0022D737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD571019FD68AB0022D737 /* AppDelegate.swift */; };
+		DFFD571319FD68AB0022D737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFD571219FD68AB0022D737 /* Images.xcassets */; };
+		DFFD571619FD68AB0022D737 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFD571419FD68AB0022D737 /* MainMenu.xib */; };
+		DFFD572219FD68AB0022D737 /* Imgur_UploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD572119FD68AB0022D737 /* Imgur_UploaderTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DFFD571C19FD68AB0022D737 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DFFD570319FD68AB0022D737 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DFFD570A19FD68AB0022D737;
+			remoteInfo = "Imgur Uploader";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DFFD570B19FD68AB0022D737 /* Imgur Uploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imgur Uploader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFD570F19FD68AB0022D737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFD571019FD68AB0022D737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DFFD571219FD68AB0022D737 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		DFFD571519FD68AB0022D737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DFFD571B19FD68AB0022D737 /* Imgur UploaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imgur UploaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DFFD572019FD68AB0022D737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DFFD572119FD68AB0022D737 /* Imgur_UploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imgur_UploaderTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DFFD570819FD68AB0022D737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD571819FD68AB0022D737 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DFFD570219FD68AB0022D737 = {
+			isa = PBXGroup;
+			children = (
+				DFFD570D19FD68AB0022D737 /* Imgur Uploader */,
+				DFFD571E19FD68AB0022D737 /* Imgur UploaderTests */,
+				DFFD570C19FD68AB0022D737 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DFFD570C19FD68AB0022D737 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD570B19FD68AB0022D737 /* Imgur Uploader.app */,
+				DFFD571B19FD68AB0022D737 /* Imgur UploaderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DFFD570D19FD68AB0022D737 /* Imgur Uploader */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD571019FD68AB0022D737 /* AppDelegate.swift */,
+				DFFD571219FD68AB0022D737 /* Images.xcassets */,
+				DFFD571419FD68AB0022D737 /* MainMenu.xib */,
+				DFFD570E19FD68AB0022D737 /* Supporting Files */,
+			);
+			path = "Imgur Uploader";
+			sourceTree = "<group>";
+		};
+		DFFD570E19FD68AB0022D737 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD570F19FD68AB0022D737 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFFD571E19FD68AB0022D737 /* Imgur UploaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD572119FD68AB0022D737 /* Imgur_UploaderTests.swift */,
+				DFFD571F19FD68AB0022D737 /* Supporting Files */,
+			);
+			path = "Imgur UploaderTests";
+			sourceTree = "<group>";
+		};
+		DFFD571F19FD68AB0022D737 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DFFD572019FD68AB0022D737 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DFFD570A19FD68AB0022D737 /* Imgur Uploader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFD572519FD68AB0022D737 /* Build configuration list for PBXNativeTarget "Imgur Uploader" */;
+			buildPhases = (
+				DFFD570719FD68AB0022D737 /* Sources */,
+				DFFD570819FD68AB0022D737 /* Frameworks */,
+				DFFD570919FD68AB0022D737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Imgur Uploader";
+			productName = "Imgur Uploader";
+			productReference = DFFD570B19FD68AB0022D737 /* Imgur Uploader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DFFD571A19FD68AB0022D737 /* Imgur UploaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFFD572819FD68AB0022D737 /* Build configuration list for PBXNativeTarget "Imgur UploaderTests" */;
+			buildPhases = (
+				DFFD571719FD68AB0022D737 /* Sources */,
+				DFFD571819FD68AB0022D737 /* Frameworks */,
+				DFFD571919FD68AB0022D737 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DFFD571D19FD68AB0022D737 /* PBXTargetDependency */,
+			);
+			name = "Imgur UploaderTests";
+			productName = "Imgur UploaderTests";
+			productReference = DFFD571B19FD68AB0022D737 /* Imgur UploaderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DFFD570319FD68AB0022D737 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Nelson Pecora";
+				TargetAttributes = {
+					DFFD570A19FD68AB0022D737 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					DFFD571A19FD68AB0022D737 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = DFFD570A19FD68AB0022D737;
+					};
+				};
+			};
+			buildConfigurationList = DFFD570619FD68AB0022D737 /* Build configuration list for PBXProject "Imgur Uploader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DFFD570219FD68AB0022D737;
+			productRefGroup = DFFD570C19FD68AB0022D737 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DFFD570A19FD68AB0022D737 /* Imgur Uploader */,
+				DFFD571A19FD68AB0022D737 /* Imgur UploaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DFFD570919FD68AB0022D737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFD571319FD68AB0022D737 /* Images.xcassets in Resources */,
+				DFFD571619FD68AB0022D737 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD571919FD68AB0022D737 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DFFD570719FD68AB0022D737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFD571119FD68AB0022D737 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFFD571719FD68AB0022D737 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DFFD572219FD68AB0022D737 /* Imgur_UploaderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DFFD571D19FD68AB0022D737 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DFFD570A19FD68AB0022D737 /* Imgur Uploader */;
+			targetProxy = DFFD571C19FD68AB0022D737 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DFFD571419FD68AB0022D737 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DFFD571519FD68AB0022D737 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DFFD572319FD68AB0022D737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DFFD572419FD68AB0022D737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DFFD572619FD68AB0022D737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Imgur Uploader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DFFD572719FD68AB0022D737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "Imgur Uploader/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DFFD572919FD68AB0022D737 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Imgur UploaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imgur Uploader.app/Contents/MacOS/Imgur Uploader";
+			};
+			name = Debug;
+		};
+		DFFD572A19FD68AB0022D737 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Imgur UploaderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Imgur Uploader.app/Contents/MacOS/Imgur Uploader";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DFFD570619FD68AB0022D737 /* Build configuration list for PBXProject "Imgur Uploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFD572319FD68AB0022D737 /* Debug */,
+				DFFD572419FD68AB0022D737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFFD572519FD68AB0022D737 /* Build configuration list for PBXNativeTarget "Imgur Uploader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFD572619FD68AB0022D737 /* Debug */,
+				DFFD572719FD68AB0022D737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DFFD572819FD68AB0022D737 /* Build configuration list for PBXNativeTarget "Imgur UploaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DFFD572919FD68AB0022D737 /* Debug */,
+				DFFD572A19FD68AB0022D737 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DFFD570319FD68AB0022D737 /* Project object */;
+}
