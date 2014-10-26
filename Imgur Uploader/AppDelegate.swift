@@ -14,6 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     
     let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    var apiConfig: NSDictionary?
     
     // file select panel
     let fileSelectPanel = NSOpenPanel();
@@ -24,6 +25,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         statusItem.image = icon
         statusItem.menu = statusMenu
+        
+        let configPath = NSBundle.mainBundle().pathForResource("Configuration", ofType: "plist")
+        
+        if configPath != nil {
+            apiConfig = NSDictionary(contentsOfFile: configPath!)
+            println(apiConfig!.description)
+        } else {
+            print("ERROR: Please add API keys to Configuration.plist")
+        }
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -39,7 +49,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         var fileUpload = fileSelectPanel.URL
         
-        if (fileUpload != nil) {
+        if fileUpload != nil {
             self.uploadFile(fileUpload!) // unwrap the NSURL
         }
     }
