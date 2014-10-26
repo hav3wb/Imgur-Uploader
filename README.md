@@ -25,3 +25,7 @@
 
 ### Extensions:
 - share to imgur
+
+# Developing
+
+1. Copy `Configuration.example.plist` to `Configuration.plist` and add your API keys
