@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		DFFD571119FD68AB0022D737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD571019FD68AB0022D737 /* AppDelegate.swift */; };
-		DFFD571319FD68AB0022D737 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFD571219FD68AB0022D737 /* Images.xcassets */; };
 		DFFD571619FD68AB0022D737 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFD571419FD68AB0022D737 /* MainMenu.xib */; };
 		DFFD572219FD68AB0022D737 /* Imgur_UploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD572119FD68AB0022D737 /* Imgur_UploaderTests.swift */; };
+		DFFD572C19FD6D800022D737 /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DFFD572B19FD6D800022D737 /* Images-2.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,11 +27,11 @@
 		DFFD570B19FD68AB0022D737 /* Imgur Uploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imgur Uploader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFD570F19FD68AB0022D737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFFD571019FD68AB0022D737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DFFD571219FD68AB0022D737 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		DFFD571519FD68AB0022D737 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DFFD571B19FD68AB0022D737 /* Imgur UploaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Imgur UploaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFD572019FD68AB0022D737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFFD572119FD68AB0022D737 /* Imgur_UploaderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imgur_UploaderTests.swift; sourceTree = "<group>"; };
+		DFFD572B19FD6D800022D737 /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +74,8 @@
 			isa = PBXGroup;
 			children = (
 				DFFD571019FD68AB0022D737 /* AppDelegate.swift */,
-				DFFD571219FD68AB0022D737 /* Images.xcassets */,
 				DFFD571419FD68AB0022D737 /* MainMenu.xib */,
+				DFFD572B19FD6D800022D737 /* Images-2.xcassets */,
 				DFFD570E19FD68AB0022D737 /* Supporting Files */,
 			);
 			path = "Imgur Uploader";
@@ -155,6 +155,7 @@
 				TargetAttributes = {
 					DFFD570A19FD68AB0022D737 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = ZKQWU82VL3;
 					};
 					DFFD571A19FD68AB0022D737 = {
 						CreatedOnToolsVersion = 6.1;
@@ -186,7 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFFD571319FD68AB0022D737 /* Images.xcassets in Resources */,
+				DFFD572C19FD6D800022D737 /* Images-2.xcassets in Resources */,
 				DFFD571619FD68AB0022D737 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -323,6 +324,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Imgur Uploader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -334,6 +336,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = "Imgur Uploader/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -393,6 +396,7 @@
 				DFFD572719FD68AB0022D737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DFFD572819FD68AB0022D737 /* Build configuration list for PBXNativeTarget "Imgur UploaderTests" */ = {
 			isa = XCConfigurationList;
@@ -401,6 +405,7 @@
 				DFFD572A19FD68AB0022D737 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

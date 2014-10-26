@@ -11,36 +11,29 @@ import Cocoa
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
     
-    var statusBar = NSStatusBar.systemStatusBar()
-    var statusBarItem : NSStatusItem = NSStatusItem()
-    var menu: NSMenu = NSMenu()
-    var menuItem : NSMenuItem = NSMenuItem()
+    @IBOutlet weak var statusMenu: NSMenu!
     
-    // status bar images
-    var imgurIcon = NSImage.init?(byReferencingFile "images.xcassets": String)
+    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
     
-    override func awakeFromNib() {
-        //Add statusBarItem
-        statusBarItem = statusBar.statusItemWithLength(-1)
-        statusBarItem.menu = menu
-        statusBarItem.title = "Presses"
-        statusBarItem.image =
-        
-        //Add menuItem to menu
-        menuItem.title = "Select Image"
-        menuItem.action = Selector("setWindowVisible:")
-        menuItem.keyEquivalent = ""
-        menu.addItem(menuItem)
-    }
-
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        let icon = NSImage(named: "statusIcon")
+        //icon.setTemplate(true) // will invert icon if you use the dark theme
+        
+        statusItem.image = icon
+        statusItem.menu = statusMenu
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
         // Insert code here to tear down your application
     }
 
+    @IBAction func selectFile(sender: NSMenuItem) {
+        var fileUpload = NSOpenPanel()
+    }
+    
+    @IBAction func quitApp(sender: NSMenuItem) {
+        NSApplication.sharedApplication().terminate(self)
+    }
 
 }
 
