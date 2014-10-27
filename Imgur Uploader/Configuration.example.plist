@@ -3,10 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>ImgurAPI</key>
-	<dict/>
-	<key>ClientID</key>
-	<string>d8f7s8d7f9</string>
-	<key>ClientSecret</key>
-	<string>d8d7fs09d8f78s97dfsdf78fgsdfg6</string>
+	<dict>
+		<key>ClientID</key>
+		<string>d8f7s8d7f9</string>
+		<key>ClientSecret</key>
+		<string>d8d7fs09d8f78s97dfsdf78fgsdfg6</string>
+	</dict>
 </dict>
 </plist>

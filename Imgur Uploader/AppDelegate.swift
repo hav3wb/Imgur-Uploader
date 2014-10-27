@@ -30,7 +30,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         if configPath != nil {
             apiConfig = NSDictionary(contentsOfFile: configPath!)
-            println(apiConfig!.description)
+            for key in apiConfig! {
+                println(key)
+            }
         } else {
             print("ERROR: Please add API keys to Configuration.plist")
         }
