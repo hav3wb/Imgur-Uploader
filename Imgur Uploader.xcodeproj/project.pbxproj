@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		DFE441F719FE83760092C477 /* Configuration.example.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFE441F619FE83760092C477 /* Configuration.example.plist */; };
+		DFE441F919FE87B20092C477 /* Configuration.plist in Resources */ = {isa = PBXBuildFile; fileRef = DFE441F819FE87B20092C477 /* Configuration.plist */; };
 		DFFD571119FD68AB0022D737 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD571019FD68AB0022D737 /* AppDelegate.swift */; };
 		DFFD571619FD68AB0022D737 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFFD571419FD68AB0022D737 /* MainMenu.xib */; };
 		DFFD572219FD68AB0022D737 /* Imgur_UploaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFFD572119FD68AB0022D737 /* Imgur_UploaderTests.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		DFE441F619FE83760092C477 /* Configuration.example.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.example.plist; sourceTree = "<group>"; };
+		DFE441F819FE87B20092C477 /* Configuration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Configuration.plist; sourceTree = "<group>"; };
 		DFFD570B19FD68AB0022D737 /* Imgur Uploader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imgur Uploader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFFD570F19FD68AB0022D737 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DFFD571019FD68AB0022D737 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 			children = (
 				DFFD570F19FD68AB0022D737 /* Info.plist */,
 				DFE441F619FE83760092C477 /* Configuration.example.plist */,
+				DFE441F819FE87B20092C477 /* Configuration.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFE441F719FE83760092C477 /* Configuration.example.plist in Resources */,
+				DFE441F919FE87B20092C477 /* Configuration.plist in Resources */,
 				DFFD572C19FD6D800022D737 /* Images-2.xcassets in Resources */,
 				DFFD571619FD68AB0022D737 /* MainMenu.xib in Resources */,
 			);
