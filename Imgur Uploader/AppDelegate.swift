@@ -35,6 +35,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         } else {
             print("ERROR: Please add API keys to Configuration.plist")
         }
+        
+//        let types = [NSFilenamesPboardType, NSURLPboardType]
+//        statusItem.button!.registerForDraggedTypes(types)
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
@@ -101,6 +104,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         
         
     }
+    
+//    func performDragOperation(sender: NSDraggingInfo!) {
+//        println("Drag performed!")
+//    }
 
     @IBAction func selectFile(sender: NSMenuItem) {
         fileSelectPanel.runModal()
