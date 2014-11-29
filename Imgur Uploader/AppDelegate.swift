@@ -81,6 +81,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                         var pasteBoard = NSPasteboard.generalPasteboard()
                         pasteBoard.clearContents()
                         pasteBoard.writeObjects([imgLink])
+                        
+                        // fire a notification
+                        let imgName = fileUrl.lastPathComponent
+                        let notification = NSUserNotification()
+                        notification.title = NSLocalizedString("Uploaded \(imgName)", comment:"")
+                        notification.informativeText = NSLocalizedString("Image uploaded and copied to the clipboard: \(imgLink)", comment: "")
+                        
+                        NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
+
                     } else {
                         NSLog("An error occurred: %@", responseDict);
                     }
