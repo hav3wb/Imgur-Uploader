@@ -27,6 +27,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem.image = icon
         statusItem.menu = statusMenu
         
+        // get the api keys from Configuration.plist
         let configPath = NSBundle.mainBundle().pathForResource("Configuration", ofType: "plist")
         
         if configPath != nil {
@@ -45,12 +46,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func uploadFile(fileUrl: NSURL) {
-        var clientID = apiKeys!["ClientID"]!
-        var clientSecret = apiKeys!["ClientSecret"]!
+        let clientID = apiKeys!["ClientID"]!
+        let clientSecret = apiKeys!["ClientSecret"]!
         let imageData: NSData = NSData(contentsOfURL: fileUrl, options: nil, error: nil)!
         
-        var url: String = "https://api.imgur.com/3/image"
-        var request: NSMutableURLRequest = NSMutableURLRequest()
+        let url: String = "https://api.imgur.com/3/image"
+        let request: NSMutableURLRequest = NSMutableURLRequest()
         request.URL = NSURL(string: url)
         request.HTTPMethod = "POST"
         
@@ -76,12 +77,12 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 if let responseDict: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: nil, error: nil) as? NSDictionary {
                     println("Received response: \(responseDict)")
                     if responseDict.valueForKey("status") != nil && responseDict.valueForKey("status")?.integerValue == 200 {
-                        var imgLink = responseDict.valueForKey("data")!.valueForKey("link") as String
+                        let imgLink = responseDict.valueForKey("data")!.valueForKey("link") as String
                         print("Image Uploaded:")
                         print(imgLink);
                         
                         // copy it to the clipboard
-                        var pasteBoard = NSPasteboard.generalPasteboard()
+                        let pasteBoard = NSPasteboard.generalPasteboard()
                         pasteBoard.clearContents()
                         pasteBoard.writeObjects([imgLink])
                         
@@ -112,7 +113,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func selectFile(sender: NSMenuItem) {
         fileSelectPanel.runModal()
         
-        var fileUpload = fileSelectPanel.URL
+        let fileUpload = fileSelectPanel.URL
         
         if fileUpload != nil {
             self.uploadFile(fileUpload!) // unwrap the NSURL
